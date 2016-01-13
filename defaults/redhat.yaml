@@ -1,5 +1,5 @@
 ---
-# file: oracle-java/defaults/redhat.yml
+# file: oracle-java/defaults/redhat.yaml
 #
 # Default variables for Redhat-based Linux distributions.
 #

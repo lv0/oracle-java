@@ -1,5 +1,5 @@
 ---
-# file: oracle-java/tasks/check_environment.yml
+# file: oracle-java/tasks/check_environment.yaml
 #
 # task to set host facts:
 #   - Java is installed?

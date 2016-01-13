@@ -1,38 +1,38 @@
 ---
-# file: oracle-java/tasks/main.yml
+# file: oracle-java/tasks/main.yaml
 #
 # tasks file
 #
 
 - name: check host environment
-  include: check_environment.yml
+  include: check_environment.yaml
 
 ## include OS family specific variables
 
 - name: include OS family/distribution specific variables
   include_vars: "{{ item }}"
   with_first_found:
-    - "../defaults/{{ ansible_distribution | lower }}-{{ ansible_distribution_version | lower }}.yml"
-    - "../defaults/{{ ansible_distribution | lower }}.yml"
-    - "../defaults/{{ ansible_os_family | lower }}.yml"
+    - "../defaults/{{ ansible_distribution | lower }}-{{ ansible_distribution_version | lower }}.yaml"
+    - "../defaults/{{ ansible_distribution | lower }}.yaml"
+    - "../defaults/{{ ansible_os_family | lower }}.yaml"
 
 - name: debug variables
-  include: debug.yml
+  include: debug.yaml
   tags:
     - debug
 
 ## include OS family specific task file
 
 - name: if darwin/macosx, include distribution specific task file
-  include: "darwin/macosx.yml"
+  include: "darwin/macosx.yaml"
   when: ansible_os_family | lower == 'darwin' and ansible_distribution | lower == 'macosx'
 
 - name: if debian, include family specific task file
-  include: "debian/main.yml"
+  include: "debian/main.yaml"
   when: ansible_os_family | lower == 'debian'
 
 - name: if redhat, include family specific task file
-  include: "redhat/main.yml"
+  include: "redhat/main.yaml"
   when: ansible_os_family | lower == 'redhat'
 
 - name: check if operating system is suported

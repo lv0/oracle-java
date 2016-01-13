@@ -1,5 +1,5 @@
 ---
-# file: oracle-java/tests/test.yml
+# file: oracle-java/tests/test.yaml
 
 - name: tests play
   hosts: all

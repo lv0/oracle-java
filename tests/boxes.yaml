@@ -1,5 +1,5 @@
 ---
-# file: oracle-java/tests/boxes.yml
+# file: oracle-java/tests/boxes.yaml
 #
 
 vagrant:

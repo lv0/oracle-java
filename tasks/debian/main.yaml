@@ -1,5 +1,5 @@
 ---
-# file: oracle-java/tasks/debian/main.yml
+# file: oracle-java/tasks/debian/main.yaml
 #
 # Task file to install Oracle Java Development Kit in a system with a Debian based Linux distribution.
 #
@@ -26,5 +26,5 @@
   sudo: yes
 
 - name: in case there were changes, check host environment again
-  include: ../check_environment.yml
+  include: ../check_environment.yaml
   when: oracle_java_task_apt_install|changed or oracle_java_task_set_default|changed

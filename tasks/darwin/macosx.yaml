@@ -1,5 +1,5 @@
 ---
-# file: oracle-java/tasks/darwin/macosx.yml
+# file: oracle-java/tasks/darwin/macosx.yaml
 #
 # Task file to install Oracle Java Development Kit in a system with a OSX based Darwin distribution.
 #
@@ -35,5 +35,5 @@
   sudo: yes
 
 - name: in case there were changes, check host environment again
-  include: ../check_environment.yml
+  include: ../check_environment.yaml
 

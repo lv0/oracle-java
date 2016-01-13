@@ -1,5 +1,5 @@
 ---
-# file: oracle-java/defaults/debian.yml
+# file: oracle-java/defaults/debian.yaml
 #
 # Default variables for Debian-based Linux distributions.
 #

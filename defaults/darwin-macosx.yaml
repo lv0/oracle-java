@@ -1,5 +1,5 @@
 ---
-# file: oracle-java/defaults/darwin-macosx.yml
+# file: oracle-java/defaults/darwin-macosx.yaml
 #
 # Default variables for OSX-based Darwin distributions.
 #
